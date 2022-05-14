@@ -2,6 +2,8 @@
   <img src="https://raw.githubusercontent.com/sys113/contact-card/main/review.png" style="border-radius:20px">
 </div>
 
+---
+
 # minimal contact card!
 ## [review online](https://sys113.github.io/contact-card/)
 
