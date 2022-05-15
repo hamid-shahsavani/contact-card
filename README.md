@@ -5,7 +5,7 @@
 ---
 
 # minimal contact card!
-## [review online](https://sys113.github.io/contact-card/)
+## [review online](https://sys113.github.io/)
 
 ---
 ## tips
