@@ -451,11 +451,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bottom-0 {
   bottom: 0px;
 }
-.z-20 {
-  z-index: 20;
-}
 .z-10 {
   z-index: 10;
+}
+.z-20 {
+  z-index: 20;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -582,6 +582,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-44 {
   width: 11rem;
+}
+.w-\[\] {
+  width: ;
 }
 .flex-col {
   flex-direction: column;
@@ -889,6 +892,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-\[110px\] {
     width: 110px;
+  }
+
+  .sm\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .sm\:w-\[240px\] {
+    width: 240px;
   }
 
   .sm\:rounded-\[30px\] {
