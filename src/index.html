@@ -11,18 +11,17 @@
     <title>minimal contact card</title>
   </head>
   <body id="bg-color" class="overflow-hidden flex justify-center items-center w-screen h-screen">
-    <img class="absolute z-20" width="325px" height="320px" src="assets/img/phone.png" alt="">
-    <section class="h-full w-full drop-shadow-2xl sm:w-[310px] sm:h-auto sm:rounded-[30px] overflow-hidden relative">
+    <img class="absolute invisible sm:visible" width="325px" height="320px" src="assets/img/phone.png" alt="">
+    <section class="h-full w-full drop-shadow-2xl sm:w-[290px] sm:h-auto sm:rounded-[30px] overflow-hidden relative">
       <div class="relative h-[140px] sm:h-[110px]">
         <!-- top icons -->
-        <div class="invisible sm:visible w-full absolute top-0 left-0 z-10 flex justify-between items-center px-4 py-3">
+        <div class="z-10 invisible sm:visible w-full absolute -top-1 left-0 flex justify-between items-center px-5 py-2">
           <div>
             <span class="text-[#eee] text-[15px]" id="time"></span>
           </div>
-          <div class="mt-1 flex gap-3">
-            <svg class="fill-[#eee] w-[17px] h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M544 0c-17.67 0-32 14.33-32 31.1V480C512 497.7 526.3 512 544 512s32-14.33 32-31.1V31.1C576 14.33 561.7 0 544 0zM160 288C142.3 288 128 302.3 128 319.1v160C128 497.7 142.3 512 160 512s32-14.33 32-31.1V319.1C192 302.3 177.7 288 160 288zM32 384C14.33 384 0 398.3 0 415.1v64C0 497.7 14.33 512 31.1 512S64 497.7 64 480V415.1C64 398.3 49.67 384 32 384zM416 96c-17.67 0-32 14.33-32 31.1V480C384 497.7 398.3 512 416 512s32-14.33 32-31.1V127.1C448 110.3 433.7 96 416 96zM288 192C270.3 192 256 206.3 256 223.1v256C256 497.7 270.3 512 288 512s32-14.33 32-31.1V223.1C320 206.3 305.7 192 288 192z"/></svg>
-            <svg class="fill-[#eee] w-[17px] h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M319.1 351.1c-35.35 0-64 28.66-64 64.01s28.66 64.01 64 64.01c35.34 0 64-28.66 64-64.01S355.3 351.1 319.1 351.1zM320 191.1c-70.25 0-137.9 25.6-190.5 72.03C116.3 275.7 115 295.9 126.7 309.2C138.5 322.4 158.7 323.7 171.9 312C212.8 275.9 265.4 256 320 256s107.3 19.88 148.1 56C474.2 317.4 481.8 320 489.3 320c8.844 0 17.66-3.656 24-10.81C525 295.9 523.8 275.7 510.5 264C457.9 217.6 390.3 191.1 320 191.1zM630.2 156.7C546.3 76.28 436.2 32 320 32S93.69 76.28 9.844 156.7c-12.75 12.25-13.16 32.5-.9375 45.25c12.22 12.78 32.47 13.12 45.25 .9375C125.1 133.1 220.4 96 320 96s193.1 37.97 265.8 106.9C592.1 208.8 600 211.8 608 211.8c8.406 0 16.81-3.281 23.09-9.844C643.3 189.2 642.9 168.1 630.2 156.7z"/></svg>
-            <svg class="fill-[#eee] w-[18px] h-[18px]"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"/></svg>
+          <div class="flex gap-3">
+            <svg class="fill-[#eee] w-[15px] h-[15px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M544 0c-17.67 0-32 14.33-32 31.1V480C512 497.7 526.3 512 544 512s32-14.33 32-31.1V31.1C576 14.33 561.7 0 544 0zM160 288C142.3 288 128 302.3 128 319.1v160C128 497.7 142.3 512 160 512s32-14.33 32-31.1V319.1C192 302.3 177.7 288 160 288zM32 384C14.33 384 0 398.3 0 415.1v64C0 497.7 14.33 512 31.1 512S64 497.7 64 480V415.1C64 398.3 49.67 384 32 384zM416 96c-17.67 0-32 14.33-32 31.1V480C384 497.7 398.3 512 416 512s32-14.33 32-31.1V127.1C448 110.3 433.7 96 416 96zM288 192C270.3 192 256 206.3 256 223.1v256C256 497.7 270.3 512 288 512s32-14.33 32-31.1V223.1C320 206.3 305.7 192 288 192z"/></svg>
+            <svg class="fill-[#dcdcdc] w-[18px] h-[18px]"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"/></svg>
           </div>
         </div>
         <!-- bg blur -->
@@ -32,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-full sm:min-h-[480px] sm:h-auto px-[14px] bg-gradient-to-r from-[#dee1e9] to-[#efefef] rounded-t-[35px] relative">
+      <div class="w-full h-full sm:h-[516px] px-[14px] bg-gradient-to-r from-[#dee1e9] to-[#efefef] rounded-t-[35px] relative">
         <!-- image -->
         <div class="absolute -top-20 sm:-top-14 right-[calc(50%-58px)] rounded-3xl bg-gradient-to-r from-[#E98E36] to-[#EE35C7] overflow-hidden p-[3px]">
           <img id="profile-image" class="w-[120px] max-h-[120px] sm:w-[110px] sm:max-h-[110px] rounded-[22px] bg-gradient-to-r from-gray-300 p-0.5 to-gray-100 bg-transparent" alt="">
@@ -96,7 +95,7 @@
             </div>
           </div>
           <!-- email -->
-          <div class="flex w-full justify-between items-center">
+          <div class="hidden flex w-full justify-between items-center">
             <div class="flex gap-2 justify-center items-center">
               <div class="bg-gradient-to-r from-[#f97284] to-[#ff334e] w-10 h-10 rounded-full flex justify-center items-center">
                 <svg class="w-[21px] h-[21px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
@@ -237,7 +236,7 @@
       <div class="absolute left-0 right-0 bottom-0">
         <div class="overflow-hidden w-full h-5 bg-transparent flex justify-center items-center">
           <div class="invisible sm:visible">
-            <div class="h-1 w-44 bg-[#565656] rounded-full"></div>
+            <div class="h-[5px] w-44 bg-[#3f3f3f] rounded-full"></div>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ let base = {
   // card background - تصویر پس زمینه کارت
   cardBg: document.getElementById('card-bg').src = "https://raw.githubusercontent.com/sys113/sys113.github.io/main/assets/img/card-bg.jpg",
   // background color - رنگ پس زمینه
-  bgColor: ['#9e4f8d','#48487d'],
+  bgColor: ['#4b134f', '#a33434'],
   applyChanges(){
     // set background color
     document.getElementById('bg-color').style.background = `linear-gradient(to right, ${this.bgColor})`;
