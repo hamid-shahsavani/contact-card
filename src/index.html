@@ -1,0 +1,247 @@
+<!--* copyright SYS113 / 2022 - april -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>minimal contact card</title>
+  </head>
+  <body id="bg-color" class="overflow-hidden flex justify-center items-center w-screen h-screen">
+    <section class="h-full w-full drop-shadow-2xl sm:w-[310px] sm:h-auto sm:rounded-[30px] overflow-hidden relative">
+      <div class="relative h-[140px] sm:h-[110px]">
+        <!-- top icons -->
+        <div class="invisible sm:visible w-full absolute top-0 left-0 z-10 flex justify-between items-center px-4 py-3">
+          <div>
+            <span class="text-[#eee] text-[15px]" id="time"></span>
+          </div>
+          <div class="mt-1 flex gap-3">
+            <svg class="fill-[#eee] w-[17px] h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M544 0c-17.67 0-32 14.33-32 31.1V480C512 497.7 526.3 512 544 512s32-14.33 32-31.1V31.1C576 14.33 561.7 0 544 0zM160 288C142.3 288 128 302.3 128 319.1v160C128 497.7 142.3 512 160 512s32-14.33 32-31.1V319.1C192 302.3 177.7 288 160 288zM32 384C14.33 384 0 398.3 0 415.1v64C0 497.7 14.33 512 31.1 512S64 497.7 64 480V415.1C64 398.3 49.67 384 32 384zM416 96c-17.67 0-32 14.33-32 31.1V480C384 497.7 398.3 512 416 512s32-14.33 32-31.1V127.1C448 110.3 433.7 96 416 96zM288 192C270.3 192 256 206.3 256 223.1v256C256 497.7 270.3 512 288 512s32-14.33 32-31.1V223.1C320 206.3 305.7 192 288 192z"/></svg>
+            <svg class="fill-[#eee] w-[17px] h-[17px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M319.1 351.1c-35.35 0-64 28.66-64 64.01s28.66 64.01 64 64.01c35.34 0 64-28.66 64-64.01S355.3 351.1 319.1 351.1zM320 191.1c-70.25 0-137.9 25.6-190.5 72.03C116.3 275.7 115 295.9 126.7 309.2C138.5 322.4 158.7 323.7 171.9 312C212.8 275.9 265.4 256 320 256s107.3 19.88 148.1 56C474.2 317.4 481.8 320 489.3 320c8.844 0 17.66-3.656 24-10.81C525 295.9 523.8 275.7 510.5 264C457.9 217.6 390.3 191.1 320 191.1zM630.2 156.7C546.3 76.28 436.2 32 320 32S93.69 76.28 9.844 156.7c-12.75 12.25-13.16 32.5-.9375 45.25c12.22 12.78 32.47 13.12 45.25 .9375C125.1 133.1 220.4 96 320 96s193.1 37.97 265.8 106.9C592.1 208.8 600 211.8 608 211.8c8.406 0 16.81-3.281 23.09-9.844C643.3 189.2 642.9 168.1 630.2 156.7z"/></svg>
+            <svg class="fill-[#eee] w-[18px] h-[18px]"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"/></svg>
+          </div>
+        </div>
+        <!-- bg blur -->
+        <div class="blur-[2px] bg-gray-300 w-full h-full flex justify-center">
+          <div>
+            <img id="card-bg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full sm:min-h-[480px] sm:h-auto px-[14px] bg-gradient-to-r from-[#dee1e9] to-[#efefef] rounded-t-[35px] relative">
+        <!-- image -->
+        <div class="absolute -top-20 sm:-top-14 right-[calc(50%-58px)] rounded-3xl bg-gradient-to-r from-[#E98E36] to-[#EE35C7] overflow-hidden p-[3px]">
+          <img id="profile-image" class="w-[120px] max-h-[120px] sm:w-[110px] sm:max-h-[110px] rounded-[22px] bg-gradient-to-r from-gray-300 p-0.5 to-gray-100 bg-transparent" alt="">
+        </div>     
+         <!-- text -->
+        <div class="flex flex-col items-center justify-center pt-[80px]">
+          <span class="font-extrabold text-lg text-[#3B4248]" id="name"></span>
+          <span class="text-[#3b4248] text-sm" id="specialty"></span>
+        </div>
+        <!-- items -->
+        <div class="flex flex-col items-center gap-6 pt-8">
+          <!-- github -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#4e4e4e] to-[#272727] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[26px] h-[26px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">github</span>
+                <span class="text-[#3a3a3b]">SYS113</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://github.com/sys113/" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[25px] h-[25px] stroke-[#72787d]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <!-- telegram -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#40baef] to-[#259ACD] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[22px] h-[22px] mr-1 fill-white" xmlns="http://www.w3.org/2000/svg" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512"><path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">telegram</span>
+                <span class="text-[#3a3a3b]">@SYS113</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://t.me/sys113" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[23px] h-[23px] stroke-[#72787d]" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <!-- instagram -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#cf00eb] to-[#ff006a] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[27px] h-[27px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">instagram</span>
+                <span class="text-[#3a3a3b]">@SYS113</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/sys113/" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[23px] h-[23px] stroke-[#72787d]" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <!-- email -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#f97284] to-[#ff334e] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[21px] h-[21px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">email</span>
+                <span class="text-[#3a3a3b]">051.sys113@gmail.com</span>
+              </div>
+            </div>
+            <div>
+              <a href="mailto:051.sys113@gmail.com" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[23px] h-[23px] stroke-[#72787d]" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- whatsapp -->
+          <div class="flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#10ec73] to-[#01D05E] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="ml-[2px] w-[28px] h-[28px] fill-white" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Logo Whatsapp</title><path d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z" fill-rule="evenodd"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">whatsapp</span>
+                <span class="text-[#3a3a3b]">+98 9159999999</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=989154472164" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[23px] h-[23px] stroke-[#72787d]" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- youtube -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#ff4949] to-[#FF0000] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[23px] h-[23px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">youtube</span>
+                <span class="text-[#3a3a3b]">sys113</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/channel/UCBWOKkUaoo3zpiNi3vEANDA" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[25px] h-[25px] stroke-[#72787d]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- twitter -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#69c7f9] to-[#36B9FF] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[23px] h-[23px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">twitter</span>
+                <span class="text-[#3a3a3b]">sys113</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/channel/UCBWOKkUaoo3zpiNi3vEANDA" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[25px] h-[25px] stroke-[#72787d]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </a>
+            </div>
+          </div>
+          <!-- call -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#0ce07a] to-[#08DF78] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[19px] h-[19px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">phone number</span>
+                <span class="text-[#3a3a3b]">+98 9159999999</span>
+              </div>
+            </div>
+            <div>
+              <a href="tel:+989154472164" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[21px] h-[21px] fill-[#72787d]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480.3 320.3L382.1 278.2c-21.41-9.281-46.64-3.109-61.2 14.95l-27.44 33.5c-44.78-25.75-82.29-63.25-108-107.1l33.55-27.48c17.91-14.62 24.09-39.7 15.02-61.05L191.7 31.53c-10.16-23.2-35.34-35.86-59.87-30.19l-91.25 21.06C16.7 27.86 0 48.83 0 73.39c0 241.9 196.7 438.6 438.6 438.6c24.56 0 45.53-16.69 50.1-40.53l21.06-91.34C516.4 355.5 503.6 330.3 480.3 320.3zM463.9 369.3l-21.09 91.41c-.4687 1.1-2.109 3.281-4.219 3.281c-215.4 0-390.6-175.2-390.6-390.6c0-2.094 1.297-3.734 3.344-4.203l91.34-21.08c.3125-.0781 .6406-.1094 .9531-.1094c1.734 0 3.359 1.047 4.047 2.609l42.14 98.33c.75 1.766 .25 3.828-1.25 5.062L139.8 193.1c-8.625 7.062-11.25 19.14-6.344 29.14c33.01 67.23 88.26 122.5 155.5 155.5c9.1 4.906 22.09 2.281 29.16-6.344l40.01-48.87c1.109-1.406 3.187-1.938 4.922-1.125l98.26 42.09C463.2 365.2 464.3 367.3 463.9 369.3z"/></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- loaction -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#f9956a] to-[#fc6929] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[25px] h-[25px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">location</span>
+                <span class="text-[#3a3a3b]">iran, mashhad</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://goo.gl/maps/tsKzvjj695YQC2v76" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="mr-[2px] w-[23px] h-[23px] fill-[#767b7f]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256C352 309 309 352 256 352C202.1 352 160 309 160 256C160 202.1 202.1 160 256 160C309 160 352 202.1 352 256zM256 208C229.5 208 208 229.5 208 256C208 282.5 229.5 304 256 304C282.5 304 304 282.5 304 256C304 229.5 282.5 208 256 208zM256 0C269.3 0 280 10.75 280 24V65.49C366.8 76.32 435.7 145.2 446.5 232H488C501.3 232 512 242.7 512 256C512 269.3 501.3 280 488 280H446.5C435.7 366.8 366.8 435.7 280 446.5V488C280 501.3 269.3 512 256 512C242.7 512 232 501.3 232 488V446.5C145.2 435.7 76.32 366.8 65.49 280H24C10.75 280 0 269.3 0 256C0 242.7 10.75 232 24 232H65.49C76.32 145.2 145.2 76.32 232 65.49V24C232 10.75 242.7 0 256 0V0zM112 256C112 335.5 176.5 400 256 400C335.5 400 400 335.5 400 256C400 176.5 335.5 112 256 112C176.5 112 112 176.5 112 256z"/></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- website -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#6497fd] to-[#3073f9] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[25px] h-[25px] stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">website</span>
+                <span class="text-[#3a3a3b]">google.com</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://google.com/" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[25px] h-[25px] stroke-[#72787d]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </a>
+            </div>
+          </div>  
+          <!-- linkedin -->
+          <div class="hidden flex w-full justify-between items-center">
+            <div class="flex gap-2 justify-center items-center">
+              <div class="bg-gradient-to-r from-[#36acec] to-[#0d7ab5] w-10 h-10 rounded-full flex justify-center items-center">
+                <svg class="w-[20px] h-[20px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-[#606162] text-sm">linkedin</span>
+                <span class="text-[#3a3a3b]">hamid shahsavani</span>
+              </div>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/hamid-shahsavani-12380321b/" target="_blank" class="w-11 h-11 rounded-full bg-[#dfe0e1] flex justify-center items-center transition-all duration-500 border border-gray-300 hover:ring-offset-2 hover:ring-[3px] hover:ring-[#d5d4d4]">
+                <svg class="w-[25px] h-[25px] stroke-[#72787d]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </a>
+            </div>
+          </div>    
+        </div>
+      <!-- bottom line -->
+      <div class="pt-10"></div>
+      <div class="absolute left-0 right-0 bottom-0">
+        <div class="overflow-hidden w-full h-5 bg-transparent flex justify-center items-center">
+          <div class="invisible sm:visible">
+            <div class="h-1 w-44 bg-[#565656] rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
