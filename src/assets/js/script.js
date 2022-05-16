@@ -12,7 +12,7 @@ let base = {
   // sggested image size : 110px x 110px - سایز تصویر پیشنهادی : ۱۱۰ پیکسل در ۱۱۰ پیکسل;
   profileImage: document.getElementById('profile-image').src = "https://raw.githubusercontent.com/sys113/sys113.github.io/a489ca9d6d7cf847cff468f61405acd033808725/assets/img/image.png",
   // card background - تصویر پس زمینه کارت
-  cardBg: document.getElementById('card-bg').src = "https://raw.githubusercontent.com/sys113/sys113.github.io/main/assets/img/card-bg.jpg",
+  cardBg: document.getElementById('card-bg').src = "https://raw.githubusercontent.com/sys113/sys113.github.io/a489ca9d6d7cf847cff468f61405acd033808725/assets/img/card-bg.jpg",
   // background color - رنگ پس زمینه
   bgColor: ['#1CB5E0', '#000046'],
   applyChanges(){
