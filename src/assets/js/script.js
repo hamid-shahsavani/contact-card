@@ -14,7 +14,7 @@ let base = {
   // card background - تصویر پس زمینه کارت
   cardBg: document.getElementById('card-bg').src = "https://wallpaperaccess.com/full/6509147.jpg",
   // background color - رنگ پس زمینه
-  bgColor: ['#1CB5E0', '#000046'],
+  bgColor: ['#8E2DE2', '#4A00E0'],
   applyChanges(){
     // set background color
     document.getElementById('bg-color').style.background = `linear-gradient(to right, ${this.bgColor})`;
