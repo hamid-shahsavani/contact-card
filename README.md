@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/sys113/contact-card/main/review.png" style="border-radius:20px">
+  <img src="https://raw.githubusercontent.com/sys113/contact-card/main/preview.png" style="border-radius:20px">
 </div>
 
 ---
