@@ -4,17 +4,19 @@
 
 ---
 
-# minimal contact card!
-## [review online](https://sys113.github.io/)
+# minimal search filter!
+## [review online](https://minimal-search-filter.netlify.app/)
 
 ---
 ## tips
 
 * fully responsive for mobile, tablet, laptop and desktop
+* filter product with tabs
+* filter product with input text value
 ---
 ## web development technologies
 * html 
-* tailwindcss
+* tailwindcss (+daisyui)
 * java script
 ---
 ## contact me
